@@ -1,4 +1,3 @@
-import ImageIceland from "../../iceland.jpg.avif";
 import { products } from "../../data/products";
 import ProductCard from "../../components/productCard/ProductCard.jsx";
 

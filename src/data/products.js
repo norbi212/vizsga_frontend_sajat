@@ -9,7 +9,8 @@ const sharedImages = [
   "../images/product_6.jpg",
   "../images/product_7.jpg",
   "../images/product_8.jpg",
-  "../images/product_9.jpg"
+  "../images/product_9.jpg",
+
 ];
 
 export const products = [

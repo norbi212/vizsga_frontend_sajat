@@ -1,23 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext.jsx";
 
 export default function Profile() {
-  const [theme, setTheme] = useState("light");
-
-  // Betöltéskor ellenőrizni a localStorage-t
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.body.dataset.theme = savedTheme;
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.body.dataset.theme = newTheme;
-    localStorage.setItem("theme", newTheme);
-  };
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import "./ProductCard.css";
+import "../../index.css";
 import { CgHeart } from "react-icons/cg";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import React, { useState } from "react";

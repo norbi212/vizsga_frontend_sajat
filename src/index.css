@@ -1,13 +1,20 @@
+@import "tailwindcss";
 :root {
-  --bg-color: #fff;
-  --text-color: #000;
+  --bg-color-main: #fff;
+  --bg-color-secondary: #f6f6f6;
+  --text-color-main: #000;
+  --text-color-secondary: #4f4f4f;
+  --text-color-third: #666;
   --nav-icon-color: #494949;
   --nav-icon-active: #000;
 }
 
 [data-theme="dark"] {
-  --bg-color: #111;
-  --text-color: #fff;
+  --bg-color-main: #111;
+  --bg-color-secondary: #222429;
+  --text-color-main: #fff;
+  --text-color-secondary: #7c7c7c;
+  --text-color-third: #302f2c;
   --nav-icon-color: #8da7ad;
   --nav-icon-active: #6d8085;
 }
@@ -15,7 +22,32 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-color-main);
+  color: var(--text-color-main);
   transition: background-color 0.3s, color 0.3s;
+}
+
+@font-face {
+  font-family: 'Agdasima-Regular';
+  src: url('./assets/fonts/Agdasima-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AlumniSansPinstripe-Regular';
+  src: url('./assets/fonts/AlumniSansPinstripe-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Geologica';
+  src: url('./assets/fonts/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendGiga';
+  src: url('./assets/fonts/LexendGiga-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LexendGiga-ExtraLight';
+  src: url("./assets/fonts/LexendGiga-ExtraLight.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'UbuntuCondensed';
+  src: url('./assets/fonts/UbuntuCondensed-Regular.ttf') format('truetype');
 }

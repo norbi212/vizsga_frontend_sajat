@@ -1,9 +1,13 @@
+*{ margin: 0; padding: 0; }
+
 .product-card{
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: relative; /* A kedvenc gomb miatt */
+  background-color: var(--bg-color-secondary);
+  border: 1px solid rgba(166, 201, 205, 0.14);
 }
 
 .product-card:hover{
@@ -33,25 +37,31 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  background: var(--bg-color);
+  background: var(--bg-color-secondary);
+  gap: 10px;
 }
 
 .product-extra {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "LexendGiga-ExtraLight'", sans-serif;
+  color: var(--text-color-secondary);
+  font-weight: 200;
+  font-size: 0.9rem;
 }
+.product-price{ font-size: 1rem; color: var(--text-color-secondary); text-decoration: none;}
 
+.product-brand{
+  font-family: "UbuntuCondensed", sans-serif;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  font-size: 1.2rem;
+  margin: 0;
+}
 .product-info h2 {
-  font-size: 0.95rem;
-}
-
-.product-brand, .product-category {
-  color: #666;
-}
-.product-price {
-  color: black;
+  font-size: 1.2rem;
+  font-family: "Arial", sans-serif;
 }
 
 .favorite-btn {
