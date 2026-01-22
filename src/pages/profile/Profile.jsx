@@ -12,7 +12,7 @@ export default function Profile() {
       </button>
 
       <br />
-      <a href="/my-listings">Saját hirdetéseim</a>
+      <a href="/profile/my-listings">Saját hirdetéseim</a>
     </div>
   );
 }

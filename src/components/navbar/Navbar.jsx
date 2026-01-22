@@ -5,7 +5,7 @@ import "./Navbar.css";
 export default function Navbar() {
   const location = useLocation();
 
-  if (location.pathname === "/welcome") return null;
+  if (location.pathname === "/welcome" || location.pathname === "/profile/my-listings") return null;
 
   const isActive = (path) => location.pathname === path;
 

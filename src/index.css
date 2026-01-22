@@ -2,21 +2,35 @@
 :root {
   --bg-color-main: #fff;
   --bg-color-secondary: #f6f6f6;
+
   --text-color-main: #000;
   --text-color-secondary: #4f4f4f;
   --text-color-third: #666;
+
   --nav-icon-color: #494949;
   --nav-icon-active: #000;
+
+  --button-bg-main: #222429;
+  --button-text-main: #fff;
+  --button-bg-secondary: #ccc;
+  --button-text-secondary: #000;
 }
 
 [data-theme="dark"] {
   --bg-color-main: #111;
   --bg-color-secondary: #222429;
+
   --text-color-main: #fff;
   --text-color-secondary: #7c7c7c;
   --text-color-third: #302f2c;
+
   --nav-icon-color: #8da7ad;
   --nav-icon-active: #6d8085;
+  
+  --button-bg-main: #ccc;
+  --button-text-main: #000;
+  --button-bg-secondary: #222429;
+  --button-text-secondary: #fff;
 }
 
 body {

@@ -19,7 +19,7 @@ export default function AppRouter() {
                 <Route path="/upload" element={<Upload />} />
                 <Route path="/favorites" element={<Favorites />} />
                 <Route path="/profile" element={<Profile />} />
-                <Route path="/my-listings" element={<MyListings />} />
+                <Route path="/profile/my-listings" element={<MyListings />} />
             </Routes>
         </BrowserRouter>
     );

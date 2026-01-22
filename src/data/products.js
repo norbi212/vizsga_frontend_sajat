@@ -4,7 +4,6 @@ const sharedImages = [
   "/images/product_1.jpg",
   "/images/product_2.jpg",
   "/images/product_3.jpg",
-  "../images/product_4.jpg",
   "../images/product_5.jpg",
   "../images/product_6.jpg",
   "../images/product_7.jpg",

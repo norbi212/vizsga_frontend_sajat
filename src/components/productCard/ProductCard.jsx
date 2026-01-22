@@ -1,13 +1,12 @@
 import "./ProductCard.css";
 import "../../index.css";
-import { CgHeart } from "react-icons/cg";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import React, { useState } from "react";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, showFavoriteButton = true }) {
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const randomIndex = Math.floor(Math.random() * 9); //csak teszteléshez
+  const randomIndex = Math.floor(Math.random() * 8); //csak teszteléshez
 
   const formatPrice = (value) =>
     new Intl.NumberFormat("hu-HU", {
@@ -20,7 +19,7 @@ export default function ProductCard({ product }) {
     <div className="product-card" key={product.id}>
 
       <div className="product-image">
-        <img src={product.images[randomIndex]} alt={product.title + " - " + randomIndex} />   {/* Élesben [0] kép */}
+        <img src={product.images[randomIndex]} alt={product.images[randomIndex]} />   {/* Élesben [0] kép */}
       </div>
 
       <div className="product-info">
@@ -34,6 +33,7 @@ export default function ProductCard({ product }) {
         </div>
       </div>
 
+    { showFavoriteButton && (
       <button
         className={`favorite-btn ${isFavorite ? "active" : ""}`}
         onClick={(e) => {
@@ -42,17 +42,14 @@ export default function ProductCard({ product }) {
         }}
         aria-label="Favorite"
       >
-        {/* <CgHeart
-          size={18}
-          fill={isFavorite ? "currentColor" : "none"}
-          stroke="currentColor"
-        /> */}
         {isFavorite ? (
           <AiFillHeart size={20} color="#e60023" />
         ) : (
           <AiOutlineHeart size={20} color="white" />
         )}
       </button>
+    )}
+      
     </div>
   );
 }
