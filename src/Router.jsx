@@ -6,6 +6,7 @@ import Upload from './pages/upload/Upload.jsx';
 import Favorites from './pages/favorites/Favorites.jsx';
 import Profile from './pages/profile/Profile.jsx';
 import MyListings from './pages/myListings/MyListings.jsx';
+import ProductPage from './pages/productPage/ProductPage.jsx';
 
 import Navbar from './components/navbar/Navbar.jsx';
 
@@ -20,6 +21,7 @@ export default function AppRouter() {
                 <Route path="/favorites" element={<Favorites />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/profile/my-listings" element={<MyListings />} />
+                <Route path="/product/:id" element={<ProductPage />} />
             </Routes>
         </BrowserRouter>
     );

@@ -37,6 +37,7 @@ export default function ProductCard({ product, showFavoriteButton = true }) {
       <button
         className={`favorite-btn ${isFavorite ? "active" : ""}`}
         onClick={(e) => {
+          e.preventDefault();   // megakadályozza a Link navigációt
           e.stopPropagation(); // ne triggerelje a card clicket
           setIsFavorite(!isFavorite);
         }}
